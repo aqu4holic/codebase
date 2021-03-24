@@ -50,10 +50,10 @@ using namespace std;
 
 
 // #define int long long
-const int oo=INT_MAX;
-const double PI = acos(-1.0);
 typedef long long ll;
 typedef unsigned long long ull;
+const int oo=INT_MAX;
+const double PI = acos(-1.0);
 typedef pair<int,int> ii; 
 #define X first
 #define Y second
@@ -64,10 +64,9 @@ typedef pair<int,int> ii;
 #define Fast ios_base::sync_with_stdio(NULL);cin.tie(NULL);cout.tie(NULL);
 #define TEN " "
 #define Fio freopen (TEN".inp","r",stdin); freopen (TEN".out","w",stdout);
-#define Io freopen (TEN".inp","r",stdin);
+#define Ro freopen (TEN".inp","r",stdin);
+#define Wo freopen (TEN".out","w",stdout);
 #define clrscr system("cls");
-
-
 
 
 
@@ -75,7 +74,8 @@ signed main()
 {
 	Fast
 	// Fio
-	// Io
+	// Ro
+	// Wo
 	//
 	// auto begin = std::chrono::high_resolution_clock::now();
 
