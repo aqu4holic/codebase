@@ -54,7 +54,9 @@ typedef long long ll;
 typedef unsigned long long ull;
 const int oo=INT_MAX;
 const double PI = acos(-1.0);
-typedef pair<int,int> ii; 
+typedef pair<int,int> ii;
+typedef pair<int,ii> iii;
+typedef pair<ii,ii> iv;
 #define X first
 #define Y second
 #define pb push_back
