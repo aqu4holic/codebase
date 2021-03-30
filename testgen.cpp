@@ -42,8 +42,8 @@ using namespace std;
 	 | . ` |/ _` | | | | | | |/ _ \ '_ \       | |  | '_ \ / _` | '_ \| '_ \    |  ___/| '_ \ / _` | __|
 	 | |\  | (_| | |_| | |_| |  __/ | | |      | |  | | | | (_| | | | | | | |   | |    | | | | (_| | |_ 
 	 |_| \_|\__, |\__,_|\__, |\___|_| |_|      |_|  |_| |_|\__,_|_| |_|_| |_|   |_|    |_| |_|\__,_|\__|
-	         __/ |       __/ |                                                                          
-	        |___/       |___/                                                                           
+			 __/ |       __/ |                                                                          
+			|___/       |___/                                                                           
 
 
 */
@@ -73,20 +73,20 @@ typedef pair<ii,ii> iv;
 ll n,a,b;
 
 ll Random(ll a, ll b){
-    ll n = b - a + 1;
-    ll remainder = RAND_MAX % n;
-    ll x;
-    do{
-        x = rand();
-    }while (x >= RAND_MAX - remainder);
-    return a + x % n;
+	ll n = b - a + 1;
+	ll remainder = RAND_MAX % n;
+	ll x;
+	do{
+		x = rand();
+	}while (x >= RAND_MAX - remainder);
+	return a + x % n;
 }
 
 double RandomDouble(double a, double b) {
-    double random = ((double) rand()) / (double) RAND_MAX;
-    double diff = b - a;
-    double r = random * diff;
-    return a + r;
+	double random = ((double) rand()) / (double) RAND_MAX;
+	double diff = b - a;
+	double r = random * diff;
+	return a + r;
 }
 
 
