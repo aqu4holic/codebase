@@ -2,6 +2,7 @@
 using namespace std;
 
 
+
 /*
 
 
@@ -49,6 +50,7 @@ using namespace std;
 */
 
 
+
 // #define int long long
 typedef long long ll;
 typedef unsigned long long ull;
@@ -81,7 +83,13 @@ signed main()
 	//
 	// auto begin = std::chrono::high_resolution_clock::now();
 
-	
+	// int t;
+	// cin >> t;
+	// for (int tt = 1; tt <= t; tt++){
+
+		
+
+	// }
 
 	// auto end = std::chrono::high_resolution_clock::now();
 	// cout << setprecision(5) << fixed << "Execution time: " << std::chrono::duration_cast<std::chrono::duration<double>>(end - begin).count() << " seconds" << endl;
