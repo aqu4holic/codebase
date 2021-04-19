@@ -59,6 +59,7 @@ const double PI = acos(-1.0);
 typedef pair<int,int> ii;
 typedef pair<int,ii> iii;
 typedef pair<ii,ii> iv;
+typedef vector <vector<int>> vdp;
 #define X first
 #define Y second
 #define pb push_back
