@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+// #include <bits/stdc++.h>
 using namespace std;
 
 
@@ -90,7 +90,7 @@ signed main()
 
     
 
-        cout << "Case #" << tt << ": " <<  << el;
+        // cout << "Case #" << tt << ": " <<  << el;
     }
 
 	// auto end = std::chrono::high_resolution_clock::now();
