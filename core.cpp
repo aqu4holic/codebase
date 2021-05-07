@@ -1,4 +1,4 @@
-// #include <bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 
@@ -68,7 +68,7 @@ typedef vector <vector<int>> vdp;
 
 #define Fast ios_base::sync_with_stdio(NULL);cin.tie(NULL);cout.tie(NULL);
 #define TEN " "
-#define Fio freopen (TEN".inp","r",stdin); freopen (TEN".out","w",stdout);
+#define Fio freopen (TEN".inp","r",stdin);freopen (TEN".out","w",stdout);
 #define Ro freopen (TEN".inp","r",stdin);
 #define Wo freopen (TEN".out","w",stdout);
 #define clrscr system("cls");
@@ -84,9 +84,9 @@ signed main()
 	//
 	// auto begin = std::chrono::high_resolution_clock::now();
 
-	int t = 1;
-    // cin >> t;
-    for (int tt = 1; tt <= t; tt++){
+	int test_case = 1;
+    // cin >> test_case;
+    for (int tt = 1; tt <= test_case; tt++){
 
     
 
