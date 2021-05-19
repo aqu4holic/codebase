@@ -51,7 +51,7 @@ using namespace std;
 
 
 
-// #define int long long
+#define int long long
 typedef long long ll;
 typedef unsigned long long ull;
 const int oo = INT_MAX;
