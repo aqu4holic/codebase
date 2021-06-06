@@ -30,8 +30,8 @@ typedef pair<int,int> ii;
 typedef pair<int,ii> iii;
 typedef pair<ii,ii> iv;
 typedef vector <vector<int>> vdp;
-#define X first
-#define Y second
+#define f first
+#define s second
 #define pb push_back
 #define ins insert
 #define el '\n'
