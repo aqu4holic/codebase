@@ -22,6 +22,9 @@ using namespace std;
 
 
 #define int long long
+#define FOR(i, a, b) for (int i = a; i <= b; ++i)
+#define FORD(i, a, b) for (int i = a; i >= b; --i)
+#define FORC(v, a) for(auto v : a)
 typedef long long ll;
 typedef unsigned long long ull;
 const int oo = INT_MAX;
