@@ -27,8 +27,9 @@ using namespace std;
 #define FORC(v, a) for(auto v : a)
 typedef long long ll;
 typedef unsigned long long ull;
+typedef long double ld;
 const int oo = INT_MAX;
-const double PI = acos(-1.0);
+const ld PI = acos(-1.0);
 typedef pair<int,int> ii;
 typedef pair<int,ii> iii;
 typedef pair<ii,ii> iv;
