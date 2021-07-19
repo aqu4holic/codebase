@@ -51,6 +51,10 @@ typedef vector <vector<int>> vdp;
 
 
 
+void solve(){
+
+}
+
 signed main()
 {
 	Fast
@@ -63,7 +67,7 @@ signed main()
 	int test_case = 1;
     // cin >> test_case;
     for (int tt = 1; tt <= test_case; tt++){
-
+    	solve();
     
 
         // cout << "Case #" << tt << ": " <<  << el;
