@@ -1,5 +1,3 @@
 # codebase
 
-A core.cpp for competitive programming
-
-C++ code base
+Python compiler and C++ compiler with an IDE
