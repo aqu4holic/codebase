@@ -20,6 +20,7 @@ typedef pair<int,ii> iii;
 typedef pair<ii,ii> iv;
 typedef vector <vector<int>> vdp;
 #define all(x) x.begin(), x.end()
+#define sz(x) (int) x.size()
 #define f first
 #define s second
 #define pb push_back
