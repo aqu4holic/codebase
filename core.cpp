@@ -54,6 +54,7 @@ typedef pair<ii,ii> iv;
 typedef vector <vector<int>> vdp;
 #define all(x) x.begin(), x.end()
 #define sz(x) (int) x.size()
+#define ENDL printf("\n");
 #define f first
 #define s second
 #define pb push_back
