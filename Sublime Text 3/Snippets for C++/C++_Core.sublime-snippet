@@ -29,10 +29,10 @@ typedef vector <vector<int>> vdp;
 #define el '\n'
 
 #define Fast ios_base::sync_with_stdio(NULL);cin.tie(NULL);cout.tie(NULL);
-#define TEN " "
-#define Fio freopen (TEN".inp","r",stdin);freopen (TEN".out","w",stdout);
-#define Ro freopen (TEN".inp","r",stdin);
-#define Wo freopen (TEN".out","w",stdout);
+#define NAME " "
+#define Fio freopen (NAME".inp","r",stdin);freopen (NAME".out","w",stdout);
+#define Ro freopen (NAME".inp","r",stdin);
+#define Wo freopen (NAME".out","w",stdout);
 #define clrscr system("cls");
 
 

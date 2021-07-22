@@ -31,10 +31,10 @@ typedef vector <vector<int>> vdp;
 #define el '\n'
 
 #define Fast ios_base::sync_with_stdio(NULL);cin.tie(NULL);cout.tie(NULL);
-#define TEN " "
-#define Fio freopen (TEN".inp","r",stdin); freopen (TEN".out","w",stdout);
-#define Ro freopen (TEN".inp","r",stdin);
-#define Wo freopen (TEN".out","w",stdout);
+#define NAME " "
+#define Fio freopen (NAME".inp","r",stdin); freopen (NAME".out","w",stdout);
+#define Ro freopen (NAME".inp","r",stdin);
+#define Wo freopen (NAME".out","w",stdout);
 #define clrscr system("cls");
 
 const int NTEST = ;
@@ -56,19 +56,19 @@ signed main()
 	srand(time(NULL));
 
 	for (int iTest = 1; iTest <= NTEST; iTest++){
-		ofstream inp((TEN + ".inp")).c_str();
+		ofstream inp((NAME + ".inp")).c_str();
 		// testgen code here
 
 		inp.close();
 
-		system((TEN + ".exe")).c_str();
-		system((TEN + "_trau.exe")).c_str();
+		system((NAME + ".exe")).c_str();
+		system((NAME + "_trau.exe")).c_str();
 
 		/*
 			viết 2 phần mềm, 1 phần mềm là thuật đúng, 1 phần mềm là thuật trâu
 		*/
 
-		if (system(("fc" + TEN + ".out" + TEN + ".ans")).c_str() != 0){
+		if (system(("fc" + NAME + ".out" + NAME + ".ans")).c_str() != 0){
 			cout << "Test " << iTest << ": WRONG!\n";
 			continue;
 		}
