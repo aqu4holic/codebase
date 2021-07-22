@@ -11,7 +11,7 @@ using namespace std;
 typedef long long ll;
 typedef unsigned long long ull;
 typedef long double ld;
-const int oo = INT_MAX;
+const int oo = 0x3f3f3f3f;
 const string yes = "YES";
 const string no = "NO";
 const ld PI = acos(-1.0);
