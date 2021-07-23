@@ -56,6 +56,7 @@ typedef pair<ii,ii> iv;
 typedef vector <vector<int>> vdp;
 #define all(x) x.begin(), x.end()
 #define sz(x) (int) x.size()
+#define clrscr system("cls");
 #define ENDL printf("\n");
 #define f first
 #define s second
@@ -63,12 +64,12 @@ typedef vector <vector<int>> vdp;
 #define ins insert
 #define el '\n'
 
-#define Fast ios_base::sync_with_stdio(NULL);cin.tie(NULL);cout.tie(NULL);
+#define Fast ios_base::sync_with_stdio(false);cin.tie(NULL);
 #define NAME " "
-#define Fio freopen (NAME".inp","r",stdin); freopen (NAME".out","w",stdout);
-#define Ro freopen (NAME".inp","r",stdin);
-#define Wo freopen (NAME".out","w",stdout);
-#define clrscr system("cls");
+void io(bool x){
+    freopen(NAME".inp", "r", stdin);
+    if (x) freopen(NAME".out", "w", stdout); 
+}
 
 const int NTEST = ;
 
@@ -80,9 +81,7 @@ ll Rand(ll l, ll h) {
 signed main()
 {
 	Fast
-	// Fio
-	// Ro
-	// Wo
+	// io(0);
 
 	srand(time(NULL));
 
