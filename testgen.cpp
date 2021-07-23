@@ -64,7 +64,7 @@ typedef vector <vector<int>> vdp;
 #define ins insert
 #define el '\n'
 
-#define Fast ios_base::sync_with_stdio(false);cin.tie(NULL);
+#define Fast ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
 #define NAME " "
 void io(bool x){
     freopen(NAME".inp", "r", stdin);
