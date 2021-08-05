@@ -31,11 +31,11 @@ void _print(T t, V... v) {__print(t); if (sizeof...(v)) cerr << ", "; _print(v..
 
 #define debugg(...) fprintf(stderr, __VA_ARGS__), fflush(stderr)
 #define time__(d) \
-    for ( \
-        auto blockTime = make_pair(chrono::high_resolution_clock::now(), true); \
-        blockTime.second; \
-        debugg("%s: %d ms\n", d, (int)chrono::duration_cast<chrono::milliseconds>(chrono::high_resolution_clock::now() - blockTime.first).count()), blockTime.second = false \
-    )
+	for ( \
+		auto blockTime = make_pair(chrono::high_resolution_clock::now(), true); \
+		blockTime.second; \
+		debugg("%s: %d ms\n", d, (int)chrono::duration_cast<chrono::milliseconds>(chrono::high_resolution_clock::now() - blockTime.first).count()), blockTime.second = false \
+	)
 
 #define int long long
 #define FOR(i, a, b) for (int i = a; i <= b; ++i)
@@ -65,8 +65,8 @@ typedef vector <vector<int>> vdp;
 #define Fast ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
 #define NAME " "
 void io(bool x){
-    freopen(NAME".inp", "r", stdin);
-    if (x) freopen(NAME".out", "w", stdout); 
+	freopen(NAME".inp", "r", stdin);
+	if (x) freopen(NAME".out", "w", stdout); 
 }
 
 
@@ -78,16 +78,16 @@ void solve(){
 signed main()
 {
 	Fast
-    // io(0);
+	// io(0);
 
 	int test_case = 1;
-    // cin >> test_case;
-    for (int tt = 1; tt <= test_case; tt++){
-    	solve();
-    
+	// cin >> test_case;
+	for (int tt = 1; tt <= test_case; tt++){
+		solve();
+	
 
-        // cout << "Case #" << tt << ": " <<  << el;
-    }
+		// cout << "Case #" << tt << ": " <<  << el;
+	}
 
 	return 0;
 }

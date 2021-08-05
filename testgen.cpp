@@ -31,11 +31,11 @@ void _print(T t, V... v) {__print(t); if (sizeof...(v)) cerr << ", "; _print(v..
 
 #define debugg(...) fprintf(stderr, __VA_ARGS__), fflush(stderr)
 #define time__(d) \
-    for ( \
-        auto blockTime = make_pair(chrono::high_resolution_clock::now(), true); \
-        blockTime.second; \
-        debugg("%s: %d ms\n", d, (int)chrono::duration_cast<chrono::milliseconds>(chrono::high_resolution_clock::now() - blockTime.first).count()), blockTime.second = false \
-    )
+	for ( \
+		auto blockTime = make_pair(chrono::high_resolution_clock::now(), true); \
+		blockTime.second; \
+		debugg("%s: %d ms\n", d, (int)chrono::duration_cast<chrono::milliseconds>(chrono::high_resolution_clock::now() - blockTime.first).count()), blockTime.second = false \
+	)
 
 #define int long long
 #define FOR(i, a, b) for (int i = a; i <= b; ++i)
@@ -67,15 +67,15 @@ typedef vector <vector<int>> vdp;
 #define Fast ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
 #define NAME " "
 void io(bool x){
-    freopen(NAME".inp", "r", stdin);
-    if (x) freopen(NAME".out", "w", stdout); 
+	freopen(NAME".inp", "r", stdin);
+	if (x) freopen(NAME".out", "w", stdout); 
 }
 
 const int NTEST = ;
 
 ll Rand(ll l, ll h) {
-    assert(l <= h);
-    return l + rd() * 1LL * rd() % (h - l + 1);
+	assert(l <= h);
+	return l + rd() * 1LL * rd() % (h - l + 1);
 }
 
 signed main()
