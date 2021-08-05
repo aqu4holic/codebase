@@ -42,8 +42,6 @@ void _print(T t, V... v) {__print(t); if (sizeof...(v)) cerr << ", "; _print(v..
 #define FOR(i, a, b) for (int i = a; i <= b; ++i)
 #define FORD(i, a, b) for (int i = a; i >= b; --i)
 #define FORC(v, a) for(auto v : a)
-mt19937 rd(chrono::steady_clock::now().time_since_epoch().count());
-#define rand rd
 typedef long long ll;
 typedef unsigned long long ull;
 typedef long double ld;
@@ -72,11 +70,10 @@ void io(bool x){
     if (x) freopen(NAME".out", "w", stdout); 
 }
 
-const int NTEST = ;
 
-ll Rand(ll l, ll h) {
-    assert(l <= h);
-    return l + rd() * 1LL * rd() % (h - l + 1);
+
+void solve(){
+
 }
 
 signed main()
@@ -84,29 +81,15 @@ signed main()
     Fast
     // io(0);
 
-    srand(time(NULL));
-
-    for (int iTest = 1; iTest <= NTEST; iTest++){
-        ofstream inp((NAME + ".inp")).c_str();
-        // testgen code here
-
-        inp.close();
-
-        system((NAME + ".exe")).c_str();
-        system((NAME + "_trau.exe")).c_str();
-
-        /*
-            viết 2 phần mềm, 1 phần mềm là thuật đúng, 1 phần mềm là thuật trâu
-        */
-
-        if (system(("fc" + NAME + ".out" + NAME + ".ans")).c_str() != 0){
-            cout << "Test " << iTest << ": WRONG!\n";
-            continue;
-        }
-
-        cout << "Test " << iTest << ": CORRECT!\n";
-    }
+    int test_case = 1;
+    // cin >> test_case;
+    for (int tt = 1; tt <= test_case; tt++){
+        solve();
     
+
+        // cout << "Case #" << tt << ": " <<  << el;
+    }
+
     return 0;
 }]]></content>
 	<tabTrigger>core</tabTrigger>
