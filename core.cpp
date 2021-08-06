@@ -64,9 +64,17 @@ typedef vector <vector<int>> vdp;
 
 #define Fast ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
 #define NAME " "
-void io(bool x){
-	freopen(NAME".inp", "r", stdin);
-	if (x) freopen(NAME".out", "w", stdout); 
+void io(int x){
+	if (!x){
+		freopen(NAME".inp", "r", stdin);
+		return;
+	}
+	if (x == 1){
+		freopen(NAME".inp", "r", stdin);
+		freopen(NAME".out", "w", stdout);
+		return;
+	}
+	freopen(NAME".out", "w", stdout);
 }
 
 
