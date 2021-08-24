@@ -44,7 +44,7 @@ void _print(T t, V... v) {__print(t); if (sizeof...(v)) cerr << ", "; _print(v..
 typedef long long ll;
 typedef unsigned long long ull;
 typedef long double ld;
-const int oo = 0x3f3f3f3f;
+const int oo = 1e18;
 const string yes = "YES";
 const string no = "NO";
 const ld PI = acos(-1.0);
