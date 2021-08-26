@@ -39,9 +39,7 @@ void _print(T t, V... v) {__print(t); if (sizeof...(v)) cerr << ", "; _print(v..
 	)
 
 #define int long long
-#define FOR(i, a, b) for (int i = a; i <= b; ++i)
-#define FORD(i, a, b) for (int i = a; i >= b; --i)
-#define FORC(v, a) for(auto v : a)
+#define rep(i, begin, end) for (__typeof(end) i = (begin) - ((begin) > (end)); i != (end) - ((begin) > (end)); i += 1 - 2 * ((begin) > (end)))
 typedef long long ll;
 typedef unsigned long long ull;
 typedef long double ld;
