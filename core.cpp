@@ -43,6 +43,7 @@ typedef long long ll;
 typedef unsigned long long ull;
 typedef long double ld;
 const int oo = 1e18;
+const ld eps = 1e-9;
 const string yes = "YES";
 const string no = "NO";
 const ld PI = acos(-1.0);
