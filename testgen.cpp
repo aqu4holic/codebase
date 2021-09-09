@@ -44,7 +44,7 @@ mt19937 rd(chrono::steady_clock::now().time_since_epoch().count());
 typedef long long ll;
 typedef unsigned long long ull;
 typedef long double ld;
-const int oo = 1e18;
+const ll oo = 1e18;
 const ld eps = 1e-9;
 const string yes = "YES";
 const string no = "NO";
