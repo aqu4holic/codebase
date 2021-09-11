@@ -101,5 +101,5 @@ signed main()
 	return 0;
 }]]></content>
 	<tabTrigger>core</tabTrigger>
-	<description>My Fancy C++ Snippet</description>
+	<description>Core for C++</description>
 </snippet>

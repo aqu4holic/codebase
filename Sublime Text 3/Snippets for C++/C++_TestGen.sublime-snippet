@@ -118,5 +118,5 @@ signed main()
 	return 0;
 }]]></content>
 	<tabTrigger>testgen</tabTrigger>
-	<description>My Fancy C++ Snippet</description>
+	<description>Testgen for C++</description>
 </snippet>
