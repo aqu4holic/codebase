@@ -1,0 +1,42 @@
+<snippet>
+	<content><![CDATA[struct DSU{
+	vector <int> root, Rank;
+	int cnt;
+
+	DSU (int x): root(x + 1), Rank(x + 1, 1), cnt(x) {iota(all(root), 0);}
+
+	int findr(int x){
+		return (x == root[x] ? x : root[x] = findr(root[x]));
+	}
+
+	int size(int x){
+		return(Rank[findr(x)]);
+	}
+
+	int unique(){
+		return cnt;
+	}
+
+	bool same(int x, int y){
+		return (findr(x) == findr(y));
+	}
+
+	bool merge(int x, int y){
+		x = findr(x);
+		y = findr(y);
+
+		if (x == y) return 0;
+		
+		if (Rank[x] < Rank[y]) swap(x, y);
+
+		Rank[x] += Rank[y];
+		root[y] = x;
+
+		cnt--;
+
+		return 1;
+	}
+};]]></content>
+	<tabTrigger>DSU</tabTrigger>
+	<description>DSU for C++</description>
+</snippet>
