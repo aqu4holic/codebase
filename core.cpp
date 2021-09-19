@@ -91,10 +91,9 @@ signed main()
 	int test_case = 1;
 	// cin >> test_case;
 	for (int tt = 1; tt <= test_case; tt++){
+		// cout << "Case #" << tt << ": ";
+		
 		solve();
-	
-
-		// cout << "Case #" << tt << ": " <<  << el;
 	}
 
 	return 0;
