@@ -1,0 +1,36 @@
+<snippet>
+	<content><![CDATA[int fast_pow(int a, int b){
+	int res = 1;
+
+	for (; b; b /= 2){
+		if (b & 1){
+			((res *= a) %= MOD);
+			b--;
+		}
+
+		((a *= a) %= MOD);
+	}
+}
+
+int inv(int x){
+	return fast_pow(x, MOD - 2);
+}
+
+void add(int &a, int b){
+	(a += b) %= MOD;
+}
+
+void sub(int &a, int b){
+	(a -= b - MOD) %= MOD;
+}
+
+void mul(int &a, int b){
+	(a *= b) %= MOD;
+}
+
+void div(int &a, int b){
+	(a *= inv(b)) %= MOD;
+}]]></content>
+	<tabTrigger>MODNUM</tabTrigger>
+	<description>Calculate numbers with MOD for C++</description>
+</snippet>
