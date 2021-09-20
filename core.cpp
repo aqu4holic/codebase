@@ -63,7 +63,7 @@ typedef vector <ii> vp;
 #define el '\n'
 
 #define Fast ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
-#define NAME " "
+#define NAME ""
 void io(int x){
 	if (!x){
 		freopen(NAME".inp", "r", stdin);
