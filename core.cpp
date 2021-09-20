@@ -53,8 +53,8 @@ typedef pair<ii,ii> iv;
 typedef vector <int> vi;
 typedef vector <vi> vvi;
 typedef vector <ii> vp;
-#define all(x) x.begin(), x.end()
-#define sz(x) (int) x.size()
+#define all(x) (x.begin(), x.end())
+#define sz(x) ((int) x.size())
 #define clrscr system("cls");
 #define ENDL printf("\n");
 #define f first
