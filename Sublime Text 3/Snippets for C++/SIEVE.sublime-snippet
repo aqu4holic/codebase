@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[vector <int> sieve(int x){
+	vector <int> res;
+	vector <int> checkPrime(x + 5, 1);
+
+	checkPrime[0] = checkPrime[1] = 0;
+	for (int i = 2; i <= x; i++){
+		if (checkPrime[i]){
+			res.pb(i);
+
+			for (int j = i * i; j <= x; j += i){
+				checkPrime[j] = 0;
+			}
+		}
+	}
+
+	return res;
+}]]></content>
+	<tabTrigger>sieve</tabTrigger>
+	<description>Prime number sieve for C++</description>
+</snippet>
