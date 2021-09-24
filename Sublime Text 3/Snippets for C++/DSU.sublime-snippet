@@ -3,7 +3,7 @@
 	vector <int> root, Rank;
 	int cnt;
 
-	DSU (int x): root(x + 1), Rank(x + 1, 1), cnt(x) {iota(all(root), 0);}
+	DSU (int x): root(x + 5), Rank(x + 5, 1), cnt(x) {iota(all(root), 0);}
 
 	int findr(int x){
 		return (x == root[x] ? x : root[x] = findr(root[x]));
