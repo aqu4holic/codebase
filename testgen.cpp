@@ -69,7 +69,7 @@ typedef vector <ii> vp;
 
 #define Fast ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
 #define NAME ""
-void io(int x){
+inline void io(int x){
 	if (!x){
 		freopen(NAME".inp", "r", stdin);
 		return;
@@ -84,7 +84,7 @@ void io(int x){
 
 const int NTEST = ;
 
-ll Rand(ll l, ll h) {
+inline ll Rand(ll l, ll h) {
 	assert(l <= h);
 	return l + rd() * 1LL * rd() % (h - l + 1);
 }
