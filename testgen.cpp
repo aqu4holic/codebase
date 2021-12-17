@@ -58,8 +58,8 @@ typedef vector <ii> vp;
 #define sz(x) ((int) x.size())
 #define clrscr system("cls");
 #define ENDL printf("\n");
-#define f first
-#define s second
+#define fi first
+#define se second
 #define pb push_back
 #define pf push_front
 #define ins insert
