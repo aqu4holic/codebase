@@ -121,10 +121,10 @@ signed main()
 		*/
 
 		if (system(("fc " + string(NAME) + ".out " + string(NAME) + ".ans").c_str()) != 0){
-			cout << "Test " << iTest << ": WRONG!\n";
+			cout << "Test " << iTest << ": WRONG !\n";
 		}
 		else{
-			cout << "Test " << iTest << ": CORRECT!\n";
+			cout << "Test " << iTest << ": CORRECT !\n";
 		}
 	}
 	
