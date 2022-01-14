@@ -84,10 +84,12 @@ inline void io(int x){
 }
 
 const int NTEST = ;
+const int N = ;
 
-inline ll Rand(ll l, ll h) {
-	assert(l <= h);
-	return l + rd() * 1LL * rd() % (h - l + 1);
+inline ll Rand(ll l, ll r) {
+	if (l > r) swap(l, r);
+	
+	return l + rd() * 1LL * rd() % (r - l + 1);
 }
 
 signed main()
@@ -98,24 +100,33 @@ signed main()
 	srand(time(NULL));
 
 	for (int iTest = 1; iTest <= NTEST; iTest++){
-		ofstream inp((NAME + ".inp")).c_str();
-		// testgen code here
+		ofstream inp((string(NAME) + ".inp").c_str());
+
+		/*
+			testgen code here
+			
+			ex:
+
+			int n = Rand(1, N);
+
+			inp << n << el;
+		*/
 
 		inp.close();
 
-		system((NAME + ".exe")).c_str();
-		system((NAME + "_trau.exe")).c_str();
+		system((string(NAME) + ".exe").c_str());
+		system((string(NAME) + "_ans.exe").c_str());
 
 		/*
 			viết 2 phần mềm, 1 phần mềm là thuật đúng, 1 phần mềm là thuật trâu
 		*/
 
-		if (system(("fc" + NAME + ".out" + NAME + ".ans")).c_str() != 0){
+		if (system(("fc " + string(NAME) + ".out " + string(NAME) + ".ans").c_str()) != 0){
 			cout << "Test " << iTest << ": WRONG!\n";
-			continue;
 		}
-
-		cout << "Test " << iTest << ": CORRECT!\n";
+		else{
+			cout << "Test " << iTest << ": CORRECT!\n";
+		}
 	}
 	
 	return 0;
