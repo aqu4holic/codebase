@@ -10,7 +10,7 @@
         {
             "name": "Terminal",
             "windows": {
-                "shell_cmd": "start \"$file_name\" cmd /c \"python $file_name & echo. & pause\"",
+                "shell_cmd": "start \"$file_name\" cmd /k \"python $file_name\"",
             },
             "linux": {
                 "shell_cmd": "xterm -T \"$file_name\" -e \"python $file_name; echo \nPress any key to exit... & read\"",
