@@ -31,10 +31,10 @@ int phi(int x){
 	return res;
 }
 int inv(int x) {return fast_pow(x, MOD - 2);}
-void add(int &a, int b) {(a += b) %= MOD;}
-void sub(int &a, int b) {(a -= b - MOD) %= MOD;}
-void mul(int &a, int b) {(a *= b) %= MOD;}
-void div(int &a, int b) {(a *= inv(b)) %= MOD;}]]></content>
+int add(int &a, int b) {(a += b) %= MOD; return a;}
+int sub(int &a, int b) {(a -= b - MOD) %= MOD; return a;}
+int mul(int &a, int b) {(a *= b) %= MOD; return a;}
+int div(int &a, int b) {(a *= inv(b)) %= MOD; return a;}]]></content>
 	<tabTrigger>MODNUM</tabTrigger>
 	<description>Calculate numbers with MOD for C++</description>
 </snippet>
