@@ -38,7 +38,8 @@ void _print(T t, V... v) {__print(t); if (sizeof...(v)) cerr << ", "; _print(v..
 	)
 
 #define int long long
-#define rep(i, begin, end) for (__typeof(end) i = (begin) - ((begin) > (end)); i != (end) - ((begin) > (end)); i += 1 - 2 * ((begin) > (end)))
+#define rep(i, begin, end) for (auto i = begin; (begin > end ? i >= end : i <= end); i += (begin > end ? -1 : 1))
+#define srep(i, begin, end, step) for (auto i = begin; (begin > end ? i >= end : i <= end); i += (begin > end ? -abs(step) : abs(step)))
 typedef long long ll;
 typedef unsigned long long ull;
 typedef long double ld;
