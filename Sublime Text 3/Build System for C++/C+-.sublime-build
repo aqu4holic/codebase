@@ -1,5 +1,5 @@
 {
-	"cmd": ["g++", "-Wall", "-Wextra", "-O2", "-o", "$file_base_name", "$file", "&&", "start", "cmd", "/c", "$file_base_name & echo. & echo. & pause"],
+	"cmd": ["g++", "-Wall", "-Wextra", "-O2", "-H", "-o", "$file_base_name", "$file", "&&", "start", "cmd", "/c", "$file_base_name & echo. & echo. & pause"],
 	"selector": "source.c++ | source.c | source.cpp |  source.cc",
 	"working_dir": "${file_path}",
 	"shell": true,
