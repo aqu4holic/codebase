@@ -1,16 +1,16 @@
 <snippet>
 	<content><![CDATA[vector <int> sieve(int x){
 	vector <int> res;
-	vector <int> checkPrime(x + 5, 1);
+	vector <int> lp(x + 5, 0);
 
-	checkPrime[0] = checkPrime[1] = 0;
 	for (int i = 2; i <= x; i++){
-		if (checkPrime[i]){
-			res.pb(i);
+		if (!lp[i]){
+			lp[i] = i;
+			res.emplace_back(i);
+		}
 
-			for (int j = i * i; j <= x; j += i){
-				checkPrime[j] = 0;
-			}
+		for (int j = 0; j < (int) size(res) && res[j] <= lp[i] && i * res[j] <= x; ++j){
+			lp[i * res[j]] = res[j];
 		}
 	}
 
