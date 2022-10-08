@@ -2,42 +2,9 @@
 #include "bits/stdc++.h"
 using namespace std;
 
-void __print(int x) {cerr << x;}
-void __print(long x) {cerr << x;}
-void __print(long long x) {cerr << x;}
-void __print(unsigned x) {cerr << x;}
-void __print(unsigned long x) {cerr << x;}
-void __print(unsigned long long x) {cerr << x;}
-void __print(float x) {cerr << x;}
-void __print(double x) {cerr << x;}
-void __print(long double x) {cerr << x;}
-void __print(char x) {cerr << '\'' << x << '\'';}
-void __print(const char *x) {cerr << '\"' << x << '\"';}
-void __print(const string &x) {cerr << '\"' << x << '\"';}
-void __print(bool x) {cerr << (x ? "true" : "false");}
-template<typename T, typename V>
-void __print(const pair<T, V> &x) {cerr << '{'; __print(x.first); cerr << ','; __print(x.second); cerr << '}';}
-template<typename T>
-void __print(const T &x) {int f = 0; cerr << '{'; for (auto &i: x) cerr << (f++ ? "," : ""), __print(i); cerr << "}";}
-void _print() {cerr << "]\n";}
-template <typename T, typename... V>
-void _print(T t, V... v) {__print(t); if (sizeof...(v)) cerr << ", "; _print(v...);}
-#ifndef ONLINE_JUDGE
-#define debug(x...) cerr << "[" << #x << "] = ["; _print(x)
-#else
-#define debug(x...)
-#endif
-
-#define debugg(...) fprintf(stderr, __VA_ARGS__), fflush(stderr)
-#define time__(d) \
-	for ( \
-		auto blockTime = make_pair(chrono::high_resolution_clock::now(), true); \
-		blockTime.second; \
-		debugg("%s: %d ms\n", d, (int)chrono::duration_cast<chrono::milliseconds>(chrono::high_resolution_clock::now() - blockTime.first).count()), blockTime.second = false \
-	)
-
 #define int long long
 #define rep(i, begin, end) for (__typeof(end) i = (begin) - ((begin) > (end)); i != (end) - ((begin) > (end)); i += 1 - 2 * ((begin) > (end)))
+#define srep(i, begin, end, step) for (auto i = begin; (begin > end ? i >= end : i <= end); i += (begin > end ? -abs(step) : abs(step)))
 typedef long long ll;
 typedef unsigned long long ull;
 typedef long double ld;
@@ -47,15 +14,11 @@ const string yes = "YES";
 const string no = "NO";
 const ld PI = acos(-1.0);
 typedef pair<int,int> ii;
-typedef pair<int,ii> iii;
-typedef pair<ii,ii> iv;
 typedef vector <int> vi;
-typedef vector <vi> vvi;
 typedef vector <ii> vp;
 #define all(x) begin(x), end(x)
 #define sz(x) ((int) x.size())
 #define clrscr system("cls");
-#define ENDL printf("\n");
 #define fi first
 #define se second
 #define pb push_back
@@ -96,7 +59,7 @@ signed main()
 	// cin >> test_case;
 	for (int tt = 1; tt <= test_case; tt++){
 		// cout << "Case #" << tt << ": ";
-		
+
 		solve();
 	}
 
