@@ -1,1 +1,0 @@
-Consolidated to a single command "PackageResourceViewer: Open Resource". Upon saving, the correct directory structure will be created if necessary.

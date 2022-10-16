@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[vector <int> sieve(int x){
+	vector <int> res;
+	vector <int> lp(x + 5, 0);
+
+	for (int i = 2; i <= x; i++){
+		if (!lp[i]){
+			lp[i] = i;
+			res.emplace_back(i);
+		}
+
+		for (int j = 0; j < (int) res.size() && res[j] <= lp[i] && i * res[j] <= x; ++j){
+			lp[i * res[j]] = res[j];
+		}
+	}
+
+	return res;
+}]]></content>
+	<tabTrigger>sieve</tabTrigger>
+	<description>Prime number sieve for C++</description>
+</snippet>
