@@ -29,7 +29,7 @@ typedef vector <ii> vp;
 #define pof pop_front
 #define el '\n'
 
-#define Fast ios_base::sync_with_stdio(false);cin.tie(NULL);
+#define Fast cin.tie(nullptr) -> ios_base::sync_with_stdio(false);
 #define NAME ""
 inline void io(int x){
 	if (!x){
