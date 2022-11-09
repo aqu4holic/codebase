@@ -54,7 +54,9 @@ inline void solve(){
 signed main()
 {
 	Fast
+	#ifdef BlackWhite
 	io(1);
+	#endif
 
 	int test_case = 1;
 	// cin >> test_case;

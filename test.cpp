@@ -1,5 +1,4 @@
-<snippet>
-	<content><![CDATA[// author: BlackWhite
+// author: BlackWhite
 #include "bits/stdc++.h"
 using namespace std;
 
@@ -31,7 +30,7 @@ typedef vector <ii> vp;
 #define el '\n'
 
 #define Fast cin.tie(nullptr) -> ios_base::sync_with_stdio(false);
-#define NAME ""
+#define NAME "test"
 inline void io(int x){
 	if (!x){
 		freopen(NAME".inp", "r", stdin);
@@ -55,7 +54,7 @@ signed main()
 {
 	Fast
 	#ifdef BlackWhite
-	// io(0);
+	io(1);
 	#endif
 
 	int test_case = 1;
@@ -67,7 +66,4 @@ signed main()
 	}
 
 	return 0;
-}]]></content>
-	<tabTrigger>core</tabTrigger>
-	<description>Core for C++</description>
-</snippet>
+}
