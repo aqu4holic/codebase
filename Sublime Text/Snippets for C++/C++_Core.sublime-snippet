@@ -54,6 +54,7 @@ inline void solve(){
 signed main()
 {
 	Fast
+	
 	#ifdef BlackWhite
 	// io(0);
 	#endif
