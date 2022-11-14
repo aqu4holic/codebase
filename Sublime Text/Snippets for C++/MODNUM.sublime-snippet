@@ -30,7 +30,7 @@ int phi(int x){
 
 	return res;
 }
-int inv(int x) {return fast_pow(x, MOD - 2);}
+int inv(int x) {return fast_pow(x, phi(MOD) - 2);}
 int add(int &a, int b) {(a += b) %= MOD; return a;}
 int sub(int &a, int b) {(a -= b - MOD) %= MOD; return a;}
 int mul(int &a, int b) {(a *= b) %= MOD; return a;}
