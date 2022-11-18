@@ -29,8 +29,7 @@ typedef vector <ii> vp;
 #define pof pop_front
 #define el '\n'
 
-#define Fast cin.tie(nullptr) -> ios_base::sync_with_stdio(false);
-#define NAME "test"
+#define NAME ""
 inline void io(int x){
 	if (!x){
 		freopen(NAME".inp", "r", stdin);
@@ -50,12 +49,11 @@ inline void solve(){
 
 }
 
-signed main()
-{
-	Fast
+signed main(){
+	cin.tie(nullptr) -> ios_base::sync_with_stdio(false);
 	
 	#ifdef BlackWhite
-	io(1);
+	// io(0);
 	#endif
 
 	int test_case = 1;

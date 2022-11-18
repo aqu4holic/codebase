@@ -32,7 +32,6 @@ typedef vector <ii> vp;
 #define pof pop_front
 #define el '\n'
 
-#define Fast cin.tie(nullptr) -> ios_base::sync_with_stdio(false);
 #define NAME ""
 inline void io(int x){
 	if (!x){
@@ -56,9 +55,8 @@ inline ll Rand(ll l, ll r) {
 	return l + rd() * 1LL * rd() % (r - l + 1);
 }
 
-signed main()
-{
-	Fast
+signed main(){
+	cin.tie(nullptr) -> ios_base::sync_with_stdio(false);
 	// io(0);
 
 	srand(time(NULL));
