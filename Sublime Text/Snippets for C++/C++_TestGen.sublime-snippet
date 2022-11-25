@@ -1,13 +1,12 @@
 <snippet>
 	<content><![CDATA[// author: BlackWhite
 #include "bits/stdc++.h"
+#include "testlib.h"
 using namespace std;
 
-#define int long long
+// #define int long long
 #define rep(i, begin, end) for (__typeof(end) i = (begin) - ((begin) > (end)); i != (end) - ((begin) > (end)); i += 1 - 2 * ((begin) > (end)))
 #define srep(i, begin, end, step) for (auto i = begin; (begin > end ? i >= end : i <= end); i += (begin > end ? -abs(step) : abs(step)))
-mt19937 rd(chrono::steady_clock::now().time_since_epoch().count());
-#define rand rd
 typedef long long ll;
 typedef unsigned long long ull;
 typedef long double ld;
@@ -32,7 +31,7 @@ typedef vector <ii> vp;
 #define pof pop_front
 #define el '\n'
 
-#define NAME ""
+#define NAME "test"
 inline void io(int x){
 	if (!x){
 		freopen(NAME".inp", "r", stdin);
@@ -43,56 +42,38 @@ inline void io(int x){
 		freopen(NAME".out", "w", stdout);
 		return;
 	}
-	freopen(NAME".out", "w", stdout);
-}
-
-const int NTEST = ;
-const int N = ;
-
-inline ll Rand(ll l, ll r) {
-	if (l > r) swap(l, r);
-	
-	return l + rd() * 1LL * rd() % (r - l + 1);
-}
-
-signed main(){
-	cin.tie(nullptr) -> ios_base::sync_with_stdio(false);
-	// io(0);
-
-	srand(time(NULL));
-
-	for (int iTest = 1; iTest <= NTEST; iTest++){
-		ofstream inp((string(NAME) + ".inp").c_str());
-
-		/*
-			testgen code here
-			
-			ex:
-
-			int n = Rand(1, N);
-
-			inp << n << el;
-		*/
-
-		inp.close();
-
-		system((string(NAME) + ".exe").c_str());
-		system((string(NAME) + "_ans.exe").c_str());
-
-		/*
-			viết 2 phần mềm, 1 phần mềm là thuật đúng, 1 phần mềm là thuật trâu
-		*/
-
-		if (system(("fc " + string(NAME) + ".out " + string(NAME) + ".ans").c_str()) != 0){
-			cout << "Test " << iTest << ": WRONG !\n";
-		}
-		else{
-			cout << "Test " << iTest << ": CORRECT !\n";
-		}
+	if (x == 2){
+		freopen(NAME".inp", "r", stdin);
+		freopen(NAME".ans", "w", stdout);
+		return;
 	}
+	freopen(NAME".inp", "w", stdout);
+}
+
+
+
+inline void solve(){
+
+}
+
+signed main(int argc, char *argv[]){
+	registerGen(argc, argv, 1);
+	cin.tie(nullptr) -> ios_base::sync_with_stdio(false);
 	
+	#ifdef BlackWhite
+	io(3);
+	#endif
+
+	int test_case = 1;
+	// cin >> test_case;
+	for (int tt = 1; tt <= test_case; tt++){
+		// cout << "Case #" << tt << ": ";
+
+		solve();
+	}
+
 	return 0;
 }]]></content>
 	<tabTrigger>testgen</tabTrigger>
-	<description>Testgen for C++</description>
+	<description>Test gen for C++</description>
 </snippet>
