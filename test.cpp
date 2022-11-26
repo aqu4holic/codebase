@@ -40,6 +40,11 @@ inline void io(int x){
 		freopen(NAME".out", "w", stdout);
 		return;
 	}
+	if (x == 2){
+		freopen(NAME".inp", "r", stdin);
+		freopen(NAME".ans", "w", stdout);
+		return;
+	}
 	freopen(NAME".out", "w", stdout);
 }
 
