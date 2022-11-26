@@ -1,0 +1,66 @@
+<snippet>
+	<content><![CDATA[struct LCA{
+	int timer = 0, L = 0;
+	vector <int> tin, tout;
+	vector <vector <int>> up;
+	vector <vector <int>> a;
+
+	LCA();
+	LCA(vector <int> adj[], int x = 0, int root = 0){
+		timer = 0;
+		tin.assign(x + 5, 0);
+		tout.assign(x + 5, 0);
+
+		L = log2(x) + 1;
+		up.assign(x + 5, vector <int> (L + 5, 0));
+
+		a.emplace_back(vector <int> (0));
+		for (int i = 1; i <= x; ++i){
+			a.emplace_back(adj[i]);
+		}
+
+		dfs(root, root);
+	}
+
+	void dfs(int u, int pre){
+		tin[u] = ++timer;
+
+		up[u][0] = pre;
+		for (int i = 1; i <= L; ++i){
+			up[u][i] = up[up[u][i - 1]][i - 1];
+		}
+
+		for (int v : a[u]){
+			if (v ^ pre){
+				dfs(v, u);
+			}
+		}
+
+		tout[u] = ++timer;
+	}
+
+	bool is_ancestor(int u, int v){
+		return ((tin[u] <= tin[v]) && (tout[u] >= tout[v]));
+	}
+
+	int lca(int u, int v){
+		if (is_ancestor(u, v)){
+			return u;
+		}
+
+		if (is_ancestor(v, u)){
+			return v;
+		}
+
+		for (int i = L; i >= 0; --i){
+			if (!is_ancestor(up[u][i], v)){
+				u = up[u][i];
+			}
+		}
+
+		return up[u][0];
+	}
+};]]></content>
+	<tabTrigger>LCA</tabTrigger>
+	<description>LCA for C++</description>
+</snippet>
