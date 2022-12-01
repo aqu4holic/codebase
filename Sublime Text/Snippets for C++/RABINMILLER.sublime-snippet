@@ -1,0 +1,64 @@
+<snippet>
+	<content><![CDATA[typedef uint64_t u64;
+typedef __uint128_t u128;
+
+u64 fast_pow(u64 a, u64 b, u64 MOD){
+	u64 res = 1;
+	a %= MOD;
+
+	for (; b; b /= 2){
+		if (b & 1){
+			res = (u128) res * a % MOD;
+		}
+
+		a = (u128) a * a % MOD;
+	}
+
+	return res;
+}
+
+bool check_composite(u64 x, u64 a, u64 d, int s){
+	u64 u = fast_pow(a, d, x);
+
+	if ((u == 1) || (u == x - 1)){
+		return 0;
+	}
+
+	for (int r = 1; r < s; ++r){
+		u = (u128) u * u % x;
+
+		if (u == x - 1){
+			return 0;
+		}
+	}
+
+	return 1;
+}
+
+bool rabinmillerCheck(int x){
+	if (x < 2){
+		return 0;
+	}
+
+	int r = 0;
+	u64 d = x - 1;
+	
+	for (; !(d % 2); d /= 2){
+		++r;
+	}
+
+	for (int a : {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37}){
+		if (x == a){
+			return 1;
+		}
+
+		if (check_composite(x, a, d, r)){
+			return 0;
+		}
+	}
+
+	return 1;
+}]]></content>
+	<tabTrigger>rabinmiller</tabTrigger>
+	<description>Rabin - Miller primality test for C++</description>
+</snippet>
