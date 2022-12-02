@@ -35,7 +35,7 @@ bool check_composite(u64 x, u64 a, u64 d, int s){
 	return 1;
 }
 
-bool rabinmillerCheck(int x){
+bool rabinmillerCheck(u64 x){
 	if (x < 2){
 		return 0;
 	}
