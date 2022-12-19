@@ -1,6 +1,5 @@
 {
-	"shell_cmd": "python -u \"$file\"",
-	// "cmd": ["python3", "-u", "$file"],
+	"shell_cmd": "py -u \"$file\"",
 	"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
 	"selector": "source.python",
 	"working_dir": "${file_path}",
@@ -12,15 +11,15 @@
 		{
 			"name": "Terminal",
 			"windows": {
-				"shell_cmd": "start \"$file_name\" cmd /k \"python $file_name\"",
+				"shell_cmd": "start \"$file_name\" cmd /k \"py $file_name\"",
 			},
 			"linux": {
-				"shell_cmd": "xterm -T \"$file_name\" -e \"python $file_name; echo \nPress any key to exit... & read\"",
+				"shell_cmd": "xterm -T \"$file_name\" -e \"py $file_name; echo \nPress any key to exit... & read\"",
 			}
 		},
 		{
 			"name": "Syntax Check",
-			"shell_cmd": "python -m py_compile \"${file}\"",
+			"shell_cmd": "py -m py_compile \"${file}\"",
 		}
 	]
 }
