@@ -1,15 +1,15 @@
 <snippet>
 	<content><![CDATA[struct LCA{
 	int timer = 0, L = 0;
-	vector <int> tin, tout;
-	vector <vector <int>> up;
-	vector <vector <int>> a;
+	vector <int> tin, tout, dist;
+	vector <vector <int>> up, a;
 
 	LCA();
 	LCA(vector <int> adj[], int x = 0, int root = 0){
 		timer = 0;
 		tin.assign(x + 5, 0);
 		tout.assign(x + 5, 0);
+		dist.assign(x + 5, 0);
 
 		L = log2(x) + 1;
 		up.assign(x + 5, vector <int> (L + 5, 0));
@@ -19,11 +19,14 @@
 			a.emplace_back(adj[i]);
 		}
 
+		dist[root] = -1;
 		dfs(root, root);
 	}
 
 	void dfs(int u, int pre){
 		tin[u] = ++timer;
+
+		dist[u] = dist[pre] + 1;
 
 		up[u][0] = pre;
 		for (int i = 1; i <= L; ++i){
@@ -59,6 +62,10 @@
 		}
 
 		return up[u][0];
+	}
+
+	int distu(int u, int v){
+		return (dist[u] + dist[v]) - 2 * dist[lca(u, v)];
 	}
 };]]></content>
 	<tabTrigger>LCA</tabTrigger>
