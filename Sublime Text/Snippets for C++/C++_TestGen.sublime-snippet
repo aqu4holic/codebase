@@ -6,8 +6,6 @@
 using namespace std;
 
 // #define int long long
-#define rep(i, begin, end) for (__typeof(end) i = (begin) - ((begin) > (end)); i != (end) - ((begin) > (end)); i += 1 - 2 * ((begin) > (end)))
-#define srep(i, begin, end, step) for (auto i = begin; (begin > end ? i >= end : i <= end); i += (begin > end ? -abs(step) : abs(step)))
 typedef long long ll;
 typedef unsigned long long ull;
 typedef long double ld;
@@ -21,7 +19,6 @@ typedef vector <int> vi;
 typedef vector <ii> vp;
 #define all(x) begin(x), end(x)
 #define sz(x) ((int) x.size())
-#define clrscr system("cls");
 #define fi first
 #define se second
 #define pb push_back
