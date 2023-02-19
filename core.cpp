@@ -9,14 +9,11 @@ typedef unsigned long long ull;
 typedef long double ld;
 const ll oo = 1e18;
 const ld eps = 1e-9;
-const string yes = "YES";
-const string no = "NO";
-const ld PI = acos(-1.0);
 typedef pair<int,int> ii;
 typedef vector <int> vi;
 typedef vector <ii> vp;
 #define all(x) begin(x), end(x)
-#define sz(x) ((int) x.size())
+#define sz(x) ((int) (x).size())
 #define fi first
 #define se second
 #define pb push_back
@@ -27,23 +24,22 @@ typedef vector <ii> vp;
 #define pof pop_front
 #define el '\n'
 
-#define NAME ""
-inline void io(int x){
+inline void io(int x, string filename){
 	if (!x){
-		freopen(NAME".inp", "r", stdin);
+		freopen((filename + ".inp").c_str(), "r", stdin);
 		return;
 	}
 	if (x == 1){
-		freopen(NAME".inp", "r", stdin);
-		freopen(NAME".out", "w", stdout);
+		freopen((filename + ".inp").c_str(), "r", stdin);
+		freopen((filename + ".out").c_str(), "w", stdout);
 		return;
 	}
 	if (x == 2){
-		freopen(NAME".inp", "r", stdin);
-		freopen(NAME".ans", "w", stdout);
+		freopen((filename + ".inp").c_str(), "r", stdin);
+		freopen((filename + ".ans").c_str(), "w", stdout);
 		return;
 	}
-	freopen(NAME".out", "w", stdout);
+	freopen((filename + ".out").c_str(), "w", stdout);
 }
 
 
@@ -56,7 +52,7 @@ signed main(){
 	cin.tie(nullptr) -> ios_base::sync_with_stdio(false);
 	
 	#ifdef BlackWhite
-	// io(0);
+	// io(0, "core");
 	#endif
 
 	int test_case = 1;
