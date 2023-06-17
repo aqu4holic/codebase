@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[// author: BlackWhite
+	<content><![CDATA[// author: blackwhite
 // ◂Ⓘ▸
 #include "bits/stdc++.h"
 #include "testlib.h"
@@ -44,7 +44,7 @@ inline void io(int x, string filename){
 	freopen((filename + ".out").c_str(), "w", stdout);
 }
 
-
+$0
 
 inline void solve(){
 

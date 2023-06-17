@@ -1,0 +1,41 @@
+<snippet>
+	<content><![CDATA[//author: blackwhite
+#include "bits/stdc++.h"
+using namespace std;
+
+#define all(x) begin(x), end(x)
+#define sz(x) (int) (x).size()
+#define el '\n';
+typedef long long ll;
+typedef pair <int, int> ii;
+typedef vector <int> vi;
+
+inline void io(int x, string filename){
+	if (!x){
+		freopen((filename + ".inp").c_str(), "r", stdin);
+		return;
+	}
+	if (x == 1){
+		freopen((filename + ".inp").c_str(), "r", stdin);
+		freopen((filename + ".out").c_str(), "w", stdout);
+		return;
+	}
+	if (x == 2){
+		freopen((filename + ".inp").c_str(), "r", stdin);
+		freopen((filename + ".ans").c_str(), "w", stdout);
+		return;
+	}
+	freopen((filename + ".out").c_str(), "w", stdout);
+}
+
+$0
+
+int main(){
+	cin.tie(0) -> sync_with_stdio(0);
+	io(1, "test");
+
+
+}]]></content>
+	<tabTrigger>zsimplecore</tabTrigger>
+	<description>Simple Core for C++</description>
+</snippet>

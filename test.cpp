@@ -1,4 +1,4 @@
-// author: BlackWhite
+// author: blackwhite
 // ◂Ⓘ▸
 #include "bits/stdc++.h"
 using namespace std;
