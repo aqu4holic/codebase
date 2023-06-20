@@ -3,6 +3,7 @@
 #include "bits/stdc++.h"
 using namespace std;
 
+#define int long long
 #define all(x) begin(x), end(x)
 #define sz(x) (int) (x).size()
 #define el '\n';
@@ -30,11 +31,21 @@ inline void io(int x, string filename){
 
 $0
 
-int main(){
+void solve(){
+
+}
+
+signed main(){
 	cin.tie(0) -> sync_with_stdio(0);
+	#ifdef BlackWhite
 	io(1, "test");
+	#endif
 
-
+	int tc = 1;
+	// cin >> tc;
+	for (int tt = 1; tt <= tc; ++tt){
+		solve();
+	}
 }]]></content>
 	<tabTrigger>zsimplecore</tabTrigger>
 	<description>Simple Core for C++</description>
