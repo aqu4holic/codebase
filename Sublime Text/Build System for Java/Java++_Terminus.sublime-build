@@ -1,0 +1,8 @@
+{
+	"target": "terminus_open",
+	"working_dir": "${file_path}",
+	"panel_name": "blackwhite",
+	"shell_cmd": "cd /d \"$file_path\" && javac \"$file_name\"  && cmd /k java \"${file_base_name}\"",
+	"file_regex": "^[ ]file \"(...?)\", line ([0-9]*)",
+	"selector": "source.java",
+}

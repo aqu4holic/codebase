@@ -1,0 +1,7 @@
+{
+	"cmd": ["javac", "${file_name}", "&&", "start", "cmd", "/k", "java", "${file_base_name}"],
+	"file_regex": "^[ ]file \"(...?)\", line ([0-9]*)",
+	// "path": ["C:\\ProgramData\\Oracle\\Java\\javapath"],
+	"selector": "source.java",
+	"shell": true
+}
