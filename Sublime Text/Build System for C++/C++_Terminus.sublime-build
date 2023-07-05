@@ -5,5 +5,4 @@
 	"shell_cmd": "cd /d \"$file_path\" && g++ -Wall -Wextra -DBlackWhite -O2 -H \"$file_name\"  -o \"$file_base_name\" && cmd /k \"${file_base_name}\"",
 	// "shell_cmd": "cd /d \"$file_path\" && g++ -DBlackWhite -O2 -H \"$file_name\"  -o \"$file_base_name\" && cmd /k \"${file_base_name}\"",
 	"selector": "source.c++ | source.c | source.cpp | source.cc",
-	"auto_close": false,
 }
