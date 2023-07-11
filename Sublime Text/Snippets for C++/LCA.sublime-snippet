@@ -14,8 +14,8 @@
 		L = log2(x) + 1;
 		up.assign(x + 5, vector <int> (L + 5, 0));
 
-		a.emplace_back(vector <int> (0));
-		for (int i = 1; i <= x; ++i){
+		if (!adj[0].size()) a.emplace_back(vector <int> (0));
+		for (int i = !bool(adj[0].size()); i < x + !bool(adj[0].size()); ++i){
 			a.emplace_back(adj[i]);
 		}
 
