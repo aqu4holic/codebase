@@ -1,0 +1,56 @@
+<snippet>
+	<content><![CDATA[struct node{
+	int cnt = 0, e = 0;
+	node *c[26];
+
+	node(){
+		cnt = e = 0;
+		for (int i = 0; i < 26; ++i){
+			c[i] = NULL;
+		}
+	}
+
+	bool search(node *r, string x){
+		for (int i = 0; i < (int) x.size(); ++i){
+			if (!(r -> c[x[i] - 'a'])){
+				return 0;
+			}
+
+			r = r -> c[x[i] - 'a'];
+		}
+
+		return r -> e;
+	}
+
+	void add(node *r, string x){
+		if (search(r, x)){
+			return;
+		}
+
+		for (int i = 0; i < (int) x.size(); ++i){
+			if (!(r -> c[x[i] - 'a'])){
+				r -> c[x[i] - 'a'] = new node;
+			}
+
+			r = r -> c[x[i] - 'a'];
+			++(r -> cnt);
+		}
+
+		r -> e = 1;
+	}
+
+	int cnt_prefix(node *r, string x){
+		for (int i = 0; i < (int) x.size(); ++i){
+			if (!(r -> c[x[i] - 'a'])){
+				return {};
+			}
+
+			r = r -> c[x[i] -'a'];
+		}
+
+		return r -> cnt;
+	}
+};]]></content>
+	<tabTrigger>TRIE</tabTrigger>
+	<description>Trie for C++</description>
+</snippet>
