@@ -16,7 +16,11 @@ typedef long long ll;
 typedef pair <int, int> ii;
 typedef vector <int> vi;
 
-inline void io(int x, string filename){
+inline void io(char *u, string filename){
+	int x = u[0] - '0';
+	if (x < 0 || x > 9){
+		return;
+	}
 	if (!x){
 		freopen((filename + ".inp").c_str(), "r", stdin);
 		return;
@@ -40,10 +44,11 @@ void solve(){
 
 }
 
-signed main(){
+signed main(signed argv, char *args[]){
 	cin.tie(0) -> sync_with_stdio(0);
 	#ifdef BlackWhite
-	io(1, "test");
+	assert(argv > 1);
+	io(args[1], "test");
 	#endif
 
 	int tc = 1;

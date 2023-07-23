@@ -26,7 +26,11 @@ typedef vector <ii> vp;
 #define pof pop_front
 #define el '\n'
 
-inline void io(int x, string filename){
+inline void io(char *u, string filename){
+	int x = u[0] - '0';
+	if (x < 0 || x > 9){
+		return;
+	}
 	if (!x){
 		freopen((filename + ".inp").c_str(), "r", stdin);
 		return;
