@@ -1,27 +1,19 @@
-// author: blackwhite
+//author: blackwhite
 #include "bits/stdc++.h"
 using namespace std;
 
 #define int long long
-typedef long long ll;
-typedef unsigned long long ull;
-typedef long double ld;
-const ll oo = 1e18;
-const ld eps = 1e-9;
-typedef pair<int,int> ii;
-typedef vector <int> vi;
-typedef vector <ii> vp;
 #define all(x) begin(x), end(x)
-#define sz(x) ((int) (x).size())
+#define sz(x) (int) (x).size()
 #define fi first
 #define se second
 #define pb push_back
-#define eb emplace_back
-#define pf push_front
-#define ins insert
-#define pob pop_back
-#define pof pop_front
-#define el '\n'
+#define oo 1e18
+#define eps 1e-9
+#define el '\n';
+typedef long long ll;
+typedef pair <int, int> ii;
+typedef vector <int> vi;
 
 inline void io(char *u, string filename){
 	int x = u[0] - '0';
@@ -47,25 +39,20 @@ inline void io(char *u, string filename){
 
 
 
-inline void solve(){
+void solve(){
 
 }
 
 signed main(signed argv, char *args[]){
-	cin.tie(nullptr) -> sync_with_stdio(false);
-
+	cin.tie(0) -> sync_with_stdio(0);
 	#ifdef BlackWhite
 	assert(argv > 1);
 	io(args[1], "test");
 	#endif
 
-	int test_case = 1;
-	// cin >> test_case;
-	for (int tt = 1; tt <= test_case; tt++){
-		// cout << "Case #" << tt << ": ";
-
+	int tc = 1;
+	// cin >> tc;
+	for (int tt = 1; tt <= tc; ++tt){
 		solve();
 	}
-
-	return 0;
 }

@@ -1,5 +1,4 @@
 // author: blackwhite
-// ◂Ⓘ▸
 #include "bits/stdc++.h"
 using namespace std;
 
@@ -24,7 +23,11 @@ typedef vector <ii> vp;
 #define pof pop_front
 #define el '\n'
 
-inline void io(int x, string filename){
+inline void io(char *u, string filename){
+	int x = u[0] - '0';
+	if (x < 0 || x > 9){
+		return;
+	}
 	if (!x){
 		freopen((filename + ".inp").c_str(), "r", stdin);
 		return;
@@ -48,11 +51,12 @@ inline void solve(){
 
 }
 
-signed main(){
-	cin.tie(nullptr) -> ios_base::sync_with_stdio(false);
-	
+signed main(signed argv, char *args[]){
+	cin.tie(nullptr) -> sync_with_stdio(false);
+
 	#ifdef BlackWhite
-	// io(0, "core");
+	assert(argv > 1);
+	io(args[1], "core");
 	#endif
 
 	int test_case = 1;
