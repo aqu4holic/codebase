@@ -11,7 +11,7 @@ using namespace std;
 #define pb push_back
 #define oo 1e18
 #define eps 1e-9
-#define el '\n';
+#define el '\n'
 typedef long long ll;
 typedef pair <int, int> ii;
 typedef vector <int> vi;
