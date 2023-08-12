@@ -46,7 +46,7 @@ void solve(){
 
 signed main(signed argv, char *args[]){
 	cin.tie(0) -> sync_with_stdio(0);
-	#ifdef BlackWhite
+	#ifdef blackwhite
 	assert(argv > 1);
 	io(args[1], "test");
 	#endif

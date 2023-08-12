@@ -57,7 +57,7 @@ signed main(int argc, char *argv[]){
 	registerGen(argc, argv, 1);
 	cin.tie(nullptr) -> sync_with_stdio(false);
 	
-	#ifdef BlackWhite
+	#ifdef blackwhite
 	assert(argc > 1);
 	io(argv[1], "test");
 	#endif

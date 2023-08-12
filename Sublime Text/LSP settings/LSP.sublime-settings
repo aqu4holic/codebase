@@ -2,19 +2,32 @@
 {
 	"lsp_format_on_save": false,
 	"inhibit_snippet_completions": false,
+	"log_max_size": 32768,
+	"log_debug": true,
 	
 	"show_diagnostics_panel_on_save": 0,
+	"show_code_actions": "annotation",
+	// "show_inlay_hints": true,
 
 	"clients": {
 		"clangd": {
+			"initializationOptions": {
+				"fallbackFlags": [
+					"-Wall",
+					"-Wextra",
+					"-Dblackwhite",
+					"-O2",
+					"-H",
+				],
+			},
 			"command": [
-				"C:/msys64/clang64/bin/clangd",
-				// "clangd",
+				"C:/msys64/clang64/bin/clangd.exe",
+				"-index",
 				"-function-arg-placeholders=0",
 				"-header-insertion-decorators=1",
-				"-index",
 				"-header-insertion=never",
 			],
+
 			"enabled": true,
 			"scopes": ["source.c", "source.c++", "source.objc", "source.objc++", "source.cc"],
 			"selector": "source.c | source.c++ | source.objc | source.objc++ | source.cc",
