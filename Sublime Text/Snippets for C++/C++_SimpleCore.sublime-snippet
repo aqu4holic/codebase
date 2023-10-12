@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[//author: blackwhite
+	<content><![CDATA[// author: blackwhite
 #include "bits/stdc++.h"
 using namespace std;
 
@@ -16,7 +16,7 @@ typedef long long ll;
 typedef pair <int, int> ii;
 typedef vector <int> vi;
 
-inline void io(char *u, string filename){
+void io(char *u, string filename){
 	int x = u[0] - '0';
 	if (x < 0 || x > 9){
 		return;
