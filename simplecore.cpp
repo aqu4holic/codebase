@@ -10,7 +10,7 @@ using namespace std;
 #define pb push_back
 #define oo 1e18
 #define eps 1e-9
-#define el '\n';
+#define el '\n'
 typedef long long ll;
 typedef pair <int, int> ii;
 typedef vector <int> vi;
@@ -45,7 +45,7 @@ void solve(){
 
 signed main(signed argv, char *args[]){
 	cin.tie(0) -> sync_with_stdio(0);
-	#ifdef BlackWhite
+	#ifdef blackwhite
 	assert(argv > 1);
 	io(args[1], "test");
 	#endif
