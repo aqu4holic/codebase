@@ -61,4 +61,5 @@ bool rabinmillerCheck(u64 x){
 }]]></content>
 	<tabTrigger>rabinmiller</tabTrigger>
 	<description>Rabin - Miller primality test for C++</description>
+	<scope>source.c++, source.c</scope>
 </snippet>

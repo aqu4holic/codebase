@@ -72,4 +72,5 @@ signed main(signed argv, char *args[]){
 }]]></content>
 	<tabTrigger>testcore</tabTrigger>
 	<description>Test core for C++</description>
+	<scope>source.c++, source.c</scope>
 </snippet>

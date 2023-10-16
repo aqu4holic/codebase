@@ -74,4 +74,5 @@ signed main(int argc, char *argv[]){
 }]]></content>
 	<tabTrigger>testgen</tabTrigger>
 	<description>Test gen for C++</description>
+	<scope>source.c++, source.c</scope>
 </snippet>

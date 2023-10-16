@@ -51,6 +51,7 @@
 		return r -> cnt;
 	}
 };]]></content>
-	<tabTrigger>TRIE</tabTrigger>
+	<tabTrigger>trie</tabTrigger>
 	<description>Trie for C++</description>
+	<scope>source.c++, source.c</scope>
 </snippet>

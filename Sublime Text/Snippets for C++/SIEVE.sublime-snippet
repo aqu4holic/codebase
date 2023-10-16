@@ -18,4 +18,5 @@
 }]]></content>
 	<tabTrigger>sieve</tabTrigger>
 	<description>Prime number sieve for C++</description>
+	<scope>source.c++, source.c</scope>
 </snippet>

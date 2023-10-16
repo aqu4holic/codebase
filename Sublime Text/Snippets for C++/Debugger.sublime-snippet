@@ -34,4 +34,5 @@ void _print(T t, V... v) {__print(t); if (sizeof...(v)) cerr << ", "; _print(v..
 	)]]></content>
 	<tabTrigger>debugger</tabTrigger>
 	<description>Debugger for C++</description>
+	<scope>source.c++, source.c</scope>
 </snippet>

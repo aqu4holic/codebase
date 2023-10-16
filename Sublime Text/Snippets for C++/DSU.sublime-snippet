@@ -42,6 +42,7 @@
 		return 1;
 	}
 };]]></content>
-	<tabTrigger>DSU</tabTrigger>
+	<tabTrigger>dsu</tabTrigger>
 	<description>DSU for C++</description>
+	<scope>source.c++, source.c</scope>
 </snippet>

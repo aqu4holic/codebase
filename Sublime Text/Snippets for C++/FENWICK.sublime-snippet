@@ -21,4 +21,5 @@
 };]]></content>
 	<tabTrigger>fenwick</tabTrigger>
 	<description>Fenwick tree for C++</description>
+	<scope>source.c++, source.c</scope>
 </snippet>

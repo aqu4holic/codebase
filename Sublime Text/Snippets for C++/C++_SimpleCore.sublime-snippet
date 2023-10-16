@@ -59,4 +59,5 @@ signed main(signed argv, char *args[]){
 }]]></content>
 	<tabTrigger>zsimplecore</tabTrigger>
 	<description>Simple Core for C++</description>
+	<scope>source.c++, source.c</scope>
 </snippet>

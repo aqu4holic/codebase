@@ -62,4 +62,5 @@ int mul(int &a, int b) {((a %= MOD) *= b % MOD) %= MOD; return a;}
 int div(int &a, int b) {((a %= MOD) *= inv(b)) %= MOD; return a;}]]></content>
 	<tabTrigger>MODNUM</tabTrigger>
 	<description>Calculate numbers with MOD for C++</description>
+	<scope>source.c++, source.c</scope>
 </snippet>

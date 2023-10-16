@@ -68,6 +68,7 @@
 		return (dist[u] + dist[v]) - 2 * dist[lca(u, v)];
 	}
 };]]></content>
-	<tabTrigger>LCA</tabTrigger>
+	<tabTrigger>lca</tabTrigger>
 	<description>LCA for C++</description>
+	<scope>source.c++, source.c</scope>
 </snippet>
