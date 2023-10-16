@@ -1,0 +1,115 @@
+<snippet>
+	<content><![CDATA[
+\documentclass[12pt]{article}
+\usepackage{subfigure}
+\usepackage[utf8]{vietnam}
+\usepackage{geometry}
+\usepackage{fancybox,graphicx}
+\usepackage{mathrsfs}
+\usepackage{amsfonts}
+\usepackage{longtable,array}
+\usepackage{multirow}
+\newlength\mylength
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\usepackage[intlimits]{amsmath}
+\usepackage{array}
+\usepackage[unicode]{hyperref}
+\usepackage{adjustbox}
+% \usepackage{algorithmic}
+% \usepackage{algorithmicx}
+\makeatletter
+% \renewcommand{\ALG@name}{Thuật toán}
+\makeatother
+\usepackage{algpseudocode}
+\usepackage{caption}
+\usepackage{amsxtra,amssymb,latexsym,amscd,amsthm}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usepackage{makeidx}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{fancyvrb}
+
+\usepackage{mathtools}
+\usepackage{listings}
+\usepackage{titlesec}
+\usepackage[bottom]{footmisc}
+
+\titleformat{\chapter}[display]
+{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{-50pt}{40pt}
+
+% \renewcommand{\thechapter}{\Roman{chapter}}
+% \renewcommand{\thesection}{\thechapter.\Roman{section}}
+% \renewcommand{\thesubsection}{\thesection.\Roman{subsection}}
+
+\definecolor{mGreen}{rgb}{0,0.6,0}
+\definecolor{mGray}{rgb}{0.5,0.5,0.5}
+\definecolor{mPurple}{rgb}{0.58,0,0.82}
+\definecolor{backgroundColour}{rgb}{0.95,0.95,0.92}
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+% \lstdefinestyle{CStyle}{
+%   backgroundcolor=\color{backgroundColour},
+%   commentstyle=\color{mGreen},
+%   keywordstyle=\color{magenta},
+%   numberstyle=\tiny\color{mGray},
+%   stringstyle=\color{mPurple},
+%   basicstyle=\footnotesize,
+%   breakatwhitespace=false,
+%   breaklines=true,
+%   captionpos=b,
+%   keepspaces=true,
+%   numbers=left,
+%   numbersep=5pt,
+%   showspaces=false,
+%   showstringspaces=false,
+%   showtabs=false,
+%   tabsize=2,
+%   language=C
+% }
+
+% \lstset{
+% tabsize = 4, %% set tab space width
+% showstringspaces = false, %% prevent space marking in strings, string is defined as the text that is generally printed directly to the console
+% numbers = left, %% display line numbers on the left
+% commentstyle = \color{green}, %% set comment color
+% keywordstyle = \color{blue}, %% set keyword color
+% stringstyle = \color{red}, %% set string color
+% rulecolor = \color{black}, %% set frame color to avoid being affected by text color
+% basicstyle = \small \ttfamily , %% set listing font and size
+% breaklines = true, %% enable line breaking
+% numberstyle = \tiny,
+% }
+
+\begin{document}
+
+\begin{titlepage}
+	\vspace*{\fill}
+	\begin{center}
+		% \textbf{\Huge Testing Assignment 3}
+
+		% \vspace{1.5cm}
+
+		% \textbf{\large Nguyễn Thành Phát - 22028108}
+	\end{center}
+	\vspace*{\fill}
+\end{titlepage}
+\newpage
+
+\tableofcontents
+\newpage
+
+$0
+
+\end{document}
+]]></content>
+	<tabTrigger>core</tabTrigger>
+	<description>report latex template</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+<scope >text.tex.latex, text.tex</scope >
+</snippet>

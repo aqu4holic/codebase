@@ -1,0 +1,71 @@
+<snippet>
+	<content><![CDATA[
+\documentclass{beamer}
+% \documentclass[aspectratio=169]{beamer}
+\usetheme{Warsaw}
+\usepackage{subfigure}
+\usepackage[utf8]{vietnam}
+% \usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{fancybox,graphicx}
+\usepackage{mathrsfs}
+\usepackage{amsfonts}
+\usepackage{longtable,array}
+\usepackage{multirow}
+\usepackage{amsmath}
+% \usepackage{array}
+% \usepackage{hyperref}
+% \usepackage{adjustbox}
+% \usepackage{algorithmic}
+% \usepackage{algorithmicx}
+% \makeatletter
+% % \renewcommand{\ALG@name}{Thuật toán}
+% \makeatother
+% \usepackage{algpseudocode}
+% \usepackage{caption}
+% \usepackage{amsxtra,amssymb,latexsym,amscd,amsthm}
+% \usepackage{enumitem}
+% \usepackage{tikz}
+% \usepackage{makeidx}
+% \usepackage{float}
+% \usepackage{xcolor}
+% \usepackage{fancyvrb}
+
+\usepackage{mathtools}
+% \usepackage{listings}
+% \usepackage{titlesec}
+% \usepackage[bottom]{footmisc}
+
+% \renewcommand{\thechapter}{\Roman{chapter}}
+% \renewcommand{\thesection}{\thechapter.\Roman{section}}
+% \renewcommand{\thesubsection}{\thesection.\Roman{subsection}}
+
+\definecolor{mGreen}{rgb}{0,0.6,0}
+\definecolor{mGray}{rgb}{0.5,0.5,0.5}
+\definecolor{mPurple}{rgb}{0.58,0,0.82}
+\definecolor{backgroundColour}{rgb}{0.95,0.95,0.92}
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+\author[]{}
+\date[]{}
+\title[]{}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+$0
+
+\end{document}
+]]></content>
+	<tabTrigger>slides</tabTrigger>
+	<description>slides latex template</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+<scope >text.tex.latex, text.tex</scope >
+</snippet>

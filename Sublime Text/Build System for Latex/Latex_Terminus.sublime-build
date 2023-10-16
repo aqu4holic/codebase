@@ -1,0 +1,19 @@
+{
+	"target": "terminus_open",
+	"working_dir": "${file_path}",
+	"panel_name": "blackwhite",
+	"shell_cmd": "pdflatex $file_name && cmd /k",
+	"selector": "text.tex.latex | text.tex",
+
+	"variants": [
+		{
+			"name": "silent",
+			"shell_cmd": "pdflatex -interaction=batchmode $file_name && cmd /k",
+		},
+
+		{
+			"name": "clear cache",
+			"shell_cmd": "py clear_latex_cache.py $file_name && cmd /k",
+		},
+	],
+}
