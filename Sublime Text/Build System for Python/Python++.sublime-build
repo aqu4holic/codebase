@@ -13,9 +13,6 @@
 			"windows": {
 				"shell_cmd": "start \"$file_name\" cmd /k \"py $file_name\"",
 			},
-			"linux": {
-				"shell_cmd": "xterm -T \"$file_name\" -e \"py $file_name; echo \nPress any key to exit... & read\"",
-			}
 		},
 		{
 			"name": "Syntax Check",
