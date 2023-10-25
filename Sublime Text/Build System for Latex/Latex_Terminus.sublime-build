@@ -2,13 +2,13 @@
 	"target": "terminus_open",
 	"working_dir": "${file_path}",
 	"panel_name": "blackwhite",
-	"shell_cmd": "pdflatex $file_name && cmd /k",
+	"shell_cmd": "pdflatex -synctex=1 $file_name && cmd /k",
 	"selector": "text.tex.latex | text.tex",
 
 	"variants": [
 		{
 			"name": "silent",
-			"shell_cmd": "pdflatex -interaction=batchmode $file_name && cmd /k",
+			"shell_cmd": "pdflatex -synctex=1 -interaction=batchmode $file_name && cmd /k",
 		},
 
 		{
