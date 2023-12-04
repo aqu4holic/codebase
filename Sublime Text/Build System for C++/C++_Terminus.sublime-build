@@ -12,11 +12,6 @@
 		},
 
 		{
-			"name": "file/terminal (i/o)",
-			"shell_cmd": "g++ -std=c++20 -Wall -Wextra -Dblackwhite -O2 \"$file_name\" -o \"$file_base_name\" && cmd /k \"${file_base_name}\" 0",
-		},
-
-		{
 			"name": "file (i/o)",
 			"shell_cmd": "g++ -std=c++20 -Wall -Wextra -Dblackwhite -O2 \"$file_name\" -o \"$file_base_name\" && cmd /k \"${file_base_name}\" 1",
 		},
@@ -27,13 +22,13 @@
 		},
 
 		{
-			"name": "terminal (i/o) (precompiled headers)",
-			"shell_cmd": "g++ -std=c++20 -Wall -Wextra -Dblackwhite -O2 -H \"$file_name\" -o \"$file_base_name\" && cmd /k \"${file_base_name}\" a",
+			"name": "file/terminal (i/o)",
+			"shell_cmd": "g++ -std=c++20 -Wall -Wextra -Dblackwhite -O2 \"$file_name\" -o \"$file_base_name\" && cmd /k \"${file_base_name}\" 0",
 		},
 
 		{
-			"name": "file/terminal (i/o) (precompiled headers)",
-			"shell_cmd": "g++ -std=c++20 -Wall -Wextra -Dblackwhite -O2 -H \"$file_name\" -o \"$file_base_name\" && cmd /k \"${file_base_name}\" 0",
+			"name": "terminal (i/o) (precompiled headers)",
+			"shell_cmd": "g++ -std=c++20 -Wall -Wextra -Dblackwhite -O2 -H \"$file_name\" -o \"$file_base_name\" && cmd /k \"${file_base_name}\" a",
 		},
 
 		{
@@ -44,6 +39,11 @@
 		{
 			"name": "terminal/file (i/o) (precompiled headers)",
 			"shell_cmd": "g++ -std=c++20 -Wall -Wextra -Dblackwhite -O2 -H \"$file_name\" -o \"$file_base_name\" && cmd /k \"${file_base_name}\" 3",
+		},
+
+		{
+			"name": "file/terminal (i/o) (precompiled headers)",
+			"shell_cmd": "g++ -std=c++20 -Wall -Wextra -Dblackwhite -O2 -H \"$file_name\" -o \"$file_base_name\" && cmd /k \"${file_base_name}\" 0",
 		},
 	],
 }

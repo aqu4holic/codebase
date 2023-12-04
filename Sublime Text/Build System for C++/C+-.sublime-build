@@ -10,11 +10,6 @@
 		},
 
 		{
-			"name": "file/terminal (i/o)",
-			"cmd": ["g++", "-std=c++20", "-Wall", "-Wextra", "-Dblackwhite", "-O2", "$file_name", "-o", "${file_base_name}.exe", "&&", "start", "cmd", "/c" , "$file_base_name 0 & echo. & pause"],
-		},
-
-		{
 			"name": "file (i/o)",
 			"cmd": ["g++", "-std=c++20", "-Wall", "-Wextra", "-Dblackwhite", "-O2", "$file_name", "-o", "${file_base_name}.exe", "&&", "start", "cmd", "/c" , "$file_base_name 1 & echo. & pause"],
 		},
@@ -25,13 +20,13 @@
 		},
 
 		{
-			"name": "terminal (i/o) (precompiled headers)",
-			"cmd": ["g++", "-std=c++20", "-Wall", "-Wextra", "-Dblackwhite", "-O2", "-H", "$file_name", "-o", "${file_base_name}.exe", "&&", "start", "cmd", "/c" , "$file_base_name a & echo. & pause"],
+			"name": "file/terminal (i/o)",
+			"cmd": ["g++", "-std=c++20", "-Wall", "-Wextra", "-Dblackwhite", "-O2", "$file_name", "-o", "${file_base_name}.exe", "&&", "start", "cmd", "/c" , "$file_base_name 0 & echo. & pause"],
 		},
 
 		{
-			"name": "file/terminal (i/o) (precompiled headers)",
-			"cmd": ["g++", "-std=c++20", "-Wall", "-Wextra", "-Dblackwhite", "-O2", "-H", "$file_name", "-o", "${file_base_name}.exe", "&&", "start", "cmd", "/c" , "$file_base_name 0 & echo. & pause"],
+			"name": "terminal (i/o) (precompiled headers)",
+			"cmd": ["g++", "-std=c++20", "-Wall", "-Wextra", "-Dblackwhite", "-O2", "-H", "$file_name", "-o", "${file_base_name}.exe", "&&", "start", "cmd", "/c" , "$file_base_name a & echo. & pause"],
 		},
 
 		{
@@ -42,6 +37,11 @@
 		{
 			"name": "terminal/file (i/o) (precompiled headers)",
 			"cmd": ["g++", "-std=c++20", "-Wall", "-Wextra", "-Dblackwhite", "-O2", "-H", "$file_name", "-o", "${file_base_name}.exe", "&&", "start", "cmd", "/c" , "$file_base_name 3 & echo. & pause"],
+		},
+
+		{
+			"name": "file/terminal (i/o) (precompiled headers)",
+			"cmd": ["g++", "-std=c++20", "-Wall", "-Wextra", "-Dblackwhite", "-O2", "-H", "$file_name", "-o", "${file_base_name}.exe", "&&", "start", "cmd", "/c" , "$file_base_name 0 & echo. & pause"],
 		},
 	],
 }
