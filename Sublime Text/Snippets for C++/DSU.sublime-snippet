@@ -7,7 +7,7 @@
 		root.assign(x + 5, 0);
 		Rank.assign(x + 5, 1);
 		cnt = x;
-		iota(all(root), 0);
+		iota(root.begin(), root.end(), 0);
 	}
 
 	int findr(int x){
