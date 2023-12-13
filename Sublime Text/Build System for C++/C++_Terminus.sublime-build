@@ -4,11 +4,13 @@
 	"panel_name": "blackwhite",
 	"shell_cmd": "g++ -std=c++20 -Wall -Wextra -Dblackwhite -O2 \"$file_name\" -o \"$file_base_name\" && cmd /k \"${file_base_name}\"",
 	"selector": "source.c++ | source.c | source.cpp | source.cc",
+	"auto_close": false,
 
 	"variants": [
 		{
 			"name": "terminal (i/o)",
 			"shell_cmd": "g++ -std=c++20 -Wall -Wextra -Dblackwhite -O2 \"$file_name\" -o \"$file_base_name\" && cmd /k \"${file_base_name}\" a",
+			// "auto_close": false,
 		},
 
 		{

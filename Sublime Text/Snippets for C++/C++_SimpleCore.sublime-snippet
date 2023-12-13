@@ -56,6 +56,8 @@ signed main(signed argv, char *args[]){
 	for (int tt = 1; tt <= tc; ++tt){
 		solve();
 	}
+
+	return 0;
 }]]></content>
 	<tabTrigger>zsimplecore</tabTrigger>
 	<description>Simple Core for C++</description>
