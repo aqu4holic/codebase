@@ -1,47 +1,48 @@
 {
 	"working_dir": "${file_path}",
-	"cmd": ["g++", "-std=c++20", "-Wall", "-Wextra", "-Dblackwhite", "-O2", "$file_name", "-o", "${file_base_name}.exe", "&&", "start", "cmd", "/k", "$file_base_name"],
+	"cmd": ["g++", "-g", "-std=c++20", "-Wall", "-Wshadow", "-Wextra", "-pedantic", "-Dblackwhite", "-O2", "$file_name", "-o", "${file_base_name}.exe", "&&", "start", "cmd", "/k", "$file_base_name"],
 	"selector": "source.c++ | source.c | source.cpp | source.cc",
 	"shell": "true",
+
 	"variants": [
 		{
 			"name": "terminal (i/o)",
-			"cmd": ["g++", "-std=c++20", "-Wall", "-Wextra", "-Dblackwhite", "-O2", "$file_name", "-o", "${file_base_name}.exe", "&&", "start", "cmd", "/k", "$file_base_name", "a"],
+			"cmd": ["g++", "-g", "-std=c++20", "-Wall", "-Wshadow", "-Wextra", "-pedantic", "-Dblackwhite", "-O2", "$file_name", "-o", "${file_base_name}.exe", "&&", "start", "cmd", "/k", "$file_base_name", "a"],
 		},
 
 		{
 			"name": "file (i/o)",
-			"cmd": ["g++", "-std=c++20", "-Wall", "-Wextra", "-Dblackwhite", "-O2", "$file_name", "-o", "${file_base_name}.exe", "&&", "start", "cmd", "/k", "$file_base_name", "1"],
+			"cmd": ["g++", "-g", "-std=c++20", "-Wall", "-Wshadow", "-Wextra", "-pedantic", "-Dblackwhite", "-O2", "$file_name", "-o", "${file_base_name}.exe", "&&", "start", "cmd", "/k", "$file_base_name", "1"],
 		},
 
 		{
 			"name": "terminal/file (i/o)",
-			"cmd": ["g++", "-std=c++20", "-Wall", "-Wextra", "-Dblackwhite", "-O2", "$file_name", "-o", "${file_base_name}.exe", "&&", "start", "cmd", "/k", "$file_base_name", "3"],
+			"cmd": ["g++", "-g", "-std=c++20", "-Wall", "-Wshadow", "-Wextra", "-pedantic", "-Dblackwhite", "-O2", "$file_name", "-o", "${file_base_name}.exe", "&&", "start", "cmd", "/k", "$file_base_name", "3"],
 		},
 
 		{
 			"name": "file/terminal (i/o)",
-			"cmd": ["g++", "-std=c++20", "-Wall", "-Wextra", "-Dblackwhite", "-O2", "$file_name", "-o", "${file_base_name}.exe", "&&", "start", "cmd", "/k", "$file_base_name", "0"],
+			"cmd": ["g++", "-g", "-std=c++20", "-Wall", "-Wshadow", "-Wextra", "-pedantic", "-Dblackwhite", "-O2", "$file_name", "-o", "${file_base_name}.exe", "&&", "start", "cmd", "/k", "$file_base_name", "0"],
 		},
 
 		{
 			"name": "terminal (i/o) (precompiled headers)",
-			"cmd": ["g++", "-std=c++20", "-Wall", "-Wextra", "-Dblackwhite", "-O2", "-H", "$file_name", "-o", "${file_base_name}.exe", "&&", "start", "cmd", "/k", "$file_base_name", "a"],
+			"cmd": ["g++", "-g", "-std=c++20", "-Wall", "-Wshadow", "-Wextra", "-pedantic", "-Dblackwhite", "-O2", "-H", "$file_name", "-o", "${file_base_name}.exe", "&&", "start", "cmd", "/k", "$file_base_name", "a"],
 		},
 
 		{
 			"name": "file (i/o) (precompiled headers)",
-			"cmd": ["g++", "-std=c++20", "-Wall", "-Wextra", "-Dblackwhite", "-O2", "-H", "$file_name", "-o", "${file_base_name}.exe", "&&", "start", "cmd", "/k", "$file_base_name", "1"],
+			"cmd": ["g++", "-g", "-std=c++20", "-Wall", "-Wshadow", "-Wextra", "-pedantic", "-Dblackwhite", "-O2", "-H", "$file_name", "-o", "${file_base_name}.exe", "&&", "start", "cmd", "/k", "$file_base_name", "1"],
 		},
 
 		{
 			"name": "terminal/file (i/o) (precompiled headers)",
-			"cmd": ["g++", "-std=c++20", "-Wall", "-Wextra", "-Dblackwhite", "-O2", "-H", "$file_name", "-o", "${file_base_name}.exe", "&&", "start", "cmd", "/k", "$file_base_name", "3"],
+			"cmd": ["g++", "-g", "-std=c++20", "-Wall", "-Wshadow", "-Wextra", "-pedantic", "-Dblackwhite", "-O2", "-H", "$file_name", "-o", "${file_base_name}.exe", "&&", "start", "cmd", "/k", "$file_base_name", "3"],
 		},
 
 		{
 			"name": "file/terminal (i/o) (precompiled headers)",
-			"cmd": ["g++", "-std=c++20", "-Wall", "-Wextra", "-Dblackwhite", "-O2", "-H", "$file_name", "-o", "${file_base_name}.exe", "&&", "start", "cmd", "/k", "$file_base_name", "0"],
+			"cmd": ["g++", "-g", "-std=c++20", "-Wall", "-Wshadow", "-Wextra", "-pedantic", "-Dblackwhite", "-O2", "-H", "$file_name", "-o", "${file_base_name}.exe", "&&", "start", "cmd", "/k", "$file_base_name", "0"],
 		},
 	],
 }
